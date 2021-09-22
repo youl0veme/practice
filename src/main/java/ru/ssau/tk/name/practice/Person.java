@@ -45,15 +45,9 @@ public class Person {
         return passportId;
     }
     public static void main (String[] args) {
-        Person p1 = new Person();
-        Person p2 = new Person();
-        Person p3 = new Person();
+        Person p1 = new Person("Green", "Nick", 7654321);
+        Person p2 = new Person("White", "Bob");
+        Person p3 = new Person(123456);
         Person p4 = new Person();
-        p3.setPassport(6545383);
-        p1.setFirstName("Green");
-        p1.setLastName("Nick");
-        p2.setFirstName("White");
-        p2.setLastName("Bob");
-        p1.setPassport(7654321);
     }
 }
