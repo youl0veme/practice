@@ -11,6 +11,18 @@ public class Point {
         this.z=z;
     }
 
+    public double getX() {
+        return x;
+    }
+
+    public double getY() {
+        return y;
+    }
+
+    public double getZ() {
+        return z;
+    }
+
     Point first = new Point(1,2,3);
     Point second = new Point(2,5,1);
 }
