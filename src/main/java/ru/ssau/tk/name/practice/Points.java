@@ -21,11 +21,11 @@ public class Points {
         return new Point(first.getX() / second.getX(), first.getY() / second.getY(), first.getZ() / second.getZ());
     }
 
-    public static Point enlarge(Point first, double second){
-        return new Point(first.getX()*second, first.getY()*second, first.getZ()*second);
+    public static Point enlarge(Point first, double second) {
+        return new Point(first.getX() * second, first.getY() * second, first.getZ() * second);
     }
 
-    public static double length(Point first){
+    public static double length(Point first) {
         return first.length();
     }
 }
