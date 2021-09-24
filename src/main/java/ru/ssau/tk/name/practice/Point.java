@@ -23,6 +23,10 @@ public class Point {
         return z;
     }
 
+    public double length(){
+        return Math.sqrt(x*x+y*y+z*z);
+    }
+
     Point first = new Point(1,2,3);
     Point second = new Point(2,5,1);
 }
