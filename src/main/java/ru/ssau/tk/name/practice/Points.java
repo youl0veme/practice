@@ -50,7 +50,7 @@ public class Points {
         return Math.abs(first - second) < DELTA;
     }
 
-    private static boolean equalsApproximately(Point first, Point second) {
+    public static boolean equalsApproximately(Point first, Point second) {
         return equalsApproximately(first.getX(), second.getX()) && equalsApproximately(first.getY(), second.getY()) && equalsApproximately(first.getZ(), second.getZ());
     }
 }
