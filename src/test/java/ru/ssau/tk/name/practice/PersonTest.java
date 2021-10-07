@@ -1,6 +1,7 @@
 package ru.ssau.tk.name.practice;
 
 import org.testng.annotations.*;
+
 import static org.testng.Assert.*;
 
 public class PersonTest {
@@ -10,49 +11,47 @@ public class PersonTest {
     Person three = new Person();
 
     @Test
-    public void testOne(){
+    public void testOne() {
         one.setFirstName("Jack");
         one.setLastName("Green");
         one.setPassport(123456);
 
-        one.getFirstName();
-        one.getLastName();
-        one.getPassport();
-
-        assertEquals(one.getFirstName() ,"Jack");
-        assertEquals(one.getLastName() ,"Green");
-        assertEquals(one.getPassport() ,123456);
+        assertEquals(one.getFirstName(), "Jack");
+        assertEquals(one.getLastName(), "Green");
+        assertEquals(one.getPassport(), 123456);
     }
+
     @Test
-    public void testTwo(){
+    public void testTwo() {
         two.setFirstName("Bob");
         two.setLastName("White");
-        two.getFirstName();
-        two.getLastName();
-        assertEquals(two.getFirstName() ,"Bob");
-        assertEquals(two.getLastName() ,"White");
+        assertEquals(two.getFirstName(), "Bob");
+        assertEquals(two.getLastName(), "White");
     }
+
     @Test
-    public void testThree(){
+    public void testThree() {
         three.setPassport(654321);
-        three.getPassport();
-        assertEquals(three.getPassport() ,654321);
+        assertEquals(three.getPassport(), 654321);
     }
+
     @Test
-    public void testPassportIdConstructor(){
+    public void testPassportIdConstructor() {
         Person p1 = new Person(3455328);
-        assertEquals(p1.getPassport(),3455328);
+        assertEquals(p1.getPassport(), 3455328);
     }
+
     @Test
-    public void testNameContructor(){
+    public void testNameContructor() {
         Person p2 = new Person("Red", "David");
         assertEquals(p2.getFirstName(), "Red");
         assertEquals(p2.getLastName(), "David");
     }
+
     @Test
-    public void testFullConstructor(){
-        Person p3 = new Person("Person", "John",6543221);
-        assertEquals(p3.getFirstName(),"Person");
+    public void testFullConstructor() {
+        Person p3 = new Person("Person", "John", 6543221);
+        assertEquals(p3.getFirstName(), "Person");
         assertEquals(p3.getLastName(), "John");
         assertEquals(p3.getPassport(), 6543221);
     }
