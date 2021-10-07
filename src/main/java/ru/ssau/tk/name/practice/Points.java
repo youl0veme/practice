@@ -1,7 +1,7 @@
 package ru.ssau.tk.name.practice;
 
 public class Points {
-    public final static double DELTA=0.00005;
+    public final static double DELTA = 0.00005;
 
     private Points() {
     }
@@ -49,7 +49,8 @@ public class Points {
     private static boolean equalsApproximately(double first, double second) {
         return Math.abs(first - second) < DELTA;
     }
-    private static boolean equalsApproximately(Point first, Point second){
-        return equalsApproximately(first.getX(), second.getX())&&equalsApproximately(first.getY(), second.getY())&&equalsApproximately(first.getZ(), second.getZ());
+
+    private static boolean equalsApproximately(Point first, Point second) {
+        return equalsApproximately(first.getX(), second.getX()) && equalsApproximately(first.getY(), second.getY()) && equalsApproximately(first.getZ(), second.getZ());
     }
 }
