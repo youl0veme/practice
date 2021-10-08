@@ -3,7 +3,7 @@ package ru.ssau.tk.name.practice;
 import org.testng.annotations.*;
 
 import static org.testng.Assert.*;
-import static ru.ssau.tk.name.practice.Operation.*;
+import static ru.ssau.tk.name.practice.Operation.DELTA;
 
 public class SqrtOperationTest {
     SqrtOperation sqrt = new SqrtOperation();
