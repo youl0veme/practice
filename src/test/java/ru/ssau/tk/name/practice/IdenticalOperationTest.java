@@ -18,10 +18,10 @@ public class IdenticalOperationTest {
     }
 
     @Test
-    public void testApplyTriple(){
-        assertEquals(identical.applyTriple(3),3,DELTA);
-        assertEquals(identical.applyTriple(Double.NaN), Double.NaN,DELTA);
-        assertEquals(identical.applyTriple(Double.NEGATIVE_INFINITY), Double.NEGATIVE_INFINITY,DELTA);
-        assertEquals(identical.applyTriple(Double.POSITIVE_INFINITY),Double.POSITIVE_INFINITY,DELTA);
+    public void testApplyTriple() {
+        assertEquals(identical.applyTriple(3), 3, DELTA);
+        assertEquals(identical.applyTriple(Double.NaN), Double.NaN, DELTA);
+        assertEquals(identical.applyTriple(Double.NEGATIVE_INFINITY), Double.NEGATIVE_INFINITY, DELTA);
+        assertEquals(identical.applyTriple(Double.POSITIVE_INFINITY), Double.POSITIVE_INFINITY, DELTA);
     }
 }
