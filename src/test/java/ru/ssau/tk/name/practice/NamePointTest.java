@@ -18,11 +18,12 @@ public class NamePointTest {
         assertEquals(third.getName(), "Point");
 
     }
+
     @Test
-    public void testSetName(){
-        NamePoint first = new NamePoint(1,3,9);
+    public void testSetName() {
+        NamePoint first = new NamePoint(1, 3, 9);
         first.setName("Point1");
-        NamePoint second = new NamePoint(5,34,1);
+        NamePoint second = new NamePoint(5, 34, 1);
         second.setName("Point2");
         assertEquals(first.getName(), "Point1");
         assertEquals(second.getName(), "Point2");
