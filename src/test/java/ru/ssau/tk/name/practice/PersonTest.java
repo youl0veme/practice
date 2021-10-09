@@ -55,4 +55,18 @@ public class PersonTest {
         assertEquals(p3.getLastName(), "John");
         assertEquals(p3.getPassport(), 6543221);
     }
+
+    @Test
+    public void testGetGender() {
+        Person p4 = new Person("Wolf", "Rube", 7654322, Gender.FEMALE);
+        Person p5 = new Person("Parker", "Peter", 567892, Gender.MALE);
+        assertEquals(p4.getGender(), Gender.FEMALE);
+        assertEquals(p5.getGender(), Gender.MALE);
+    }
+
+    @Test
+    public void testSetGender() {
+        one.setGender(Gender.FEMALE);
+        two.setGender(Gender.MALE);
+    }
 }
