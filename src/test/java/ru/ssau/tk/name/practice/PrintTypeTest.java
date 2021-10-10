@@ -7,7 +7,7 @@ public class PrintTypeTest {
     public void testPrintType() {
         PrintType.printType("temp");
         PrintType.printType('w');
-        PrintType.printType((byte) 1);
+        PrintType.printType((byte) 2);
         PrintType.printType((short) 1);
         PrintType.printType(1.);
         PrintType.printType(22L);
