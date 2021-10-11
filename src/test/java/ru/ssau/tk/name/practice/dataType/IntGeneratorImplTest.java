@@ -1,8 +1,6 @@
 package ru.ssau.tk.name.practice.dataType;
 
 import org.testng.annotations.Test;
-import ru.ssau.tk.name.practice.dataType.IntGenerator;
-import ru.ssau.tk.name.practice.dataType.IntGeneratorImpl;
 
 import static org.testng.Assert.*;
 

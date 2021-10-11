@@ -1,9 +1,6 @@
 package ru.ssau.tk.name.practice.dataType;
 
 import org.testng.annotations.Test;
-import ru.ssau.tk.name.practice.dataType.IntGenerator;
-import ru.ssau.tk.name.practice.dataType.Resettable;
-import ru.ssau.tk.name.practice.dataType.ResettableIntGenerator;
 
 import static org.testng.Assert.*;
 
