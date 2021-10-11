@@ -10,7 +10,7 @@ public class Task2_1Test {
         int[] firstArray = Task2_1.setNumber(6);
         int[] secondArray = Task2_1.setNumber(12);
         assertEquals(firstArray.length, 6);
-        assertEquals(secondArray.length,12);
+        assertEquals(secondArray.length, 12);
     }
 
 }
