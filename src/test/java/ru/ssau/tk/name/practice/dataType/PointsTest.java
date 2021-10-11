@@ -1,4 +1,4 @@
-package ru.ssau.tk.name.practice;
+package ru.ssau.tk.name.practice.dataType;
 
 import org.testng.annotations.*;
 import ru.ssau.tk.name.practice.dataType.Point;
