@@ -1,8 +1,7 @@
 package ru.ssau.tk.name.practice;
 
-import org.testng.annotations.*;
-
 import org.testng.annotations.Test;
+import ru.ssau.tk.name.practice.dataType.NamePoint;
 
 import static org.testng.Assert.*;
 

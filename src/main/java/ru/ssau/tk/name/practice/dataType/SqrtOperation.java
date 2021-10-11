@@ -1,4 +1,6 @@
-package ru.ssau.tk.name.practice;
+package ru.ssau.tk.name.practice.dataType;
+
+import ru.ssau.tk.name.practice.dataType.Operation;
 
 public class SqrtOperation extends Operation {
     @Override

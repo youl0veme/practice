@@ -1,9 +1,10 @@
 package ru.ssau.tk.name.practice;
 
 import org.testng.annotations.*;
+import ru.ssau.tk.name.practice.dataType.TangentOperation;
 
 import static org.testng.Assert.*;
-import static ru.ssau.tk.name.practice.Operation.DELTA;
+import static ru.ssau.tk.name.practice.dataType.Operation.DELTA;
 
 public class TangentOperationTest {
     TangentOperation tan = new TangentOperation();

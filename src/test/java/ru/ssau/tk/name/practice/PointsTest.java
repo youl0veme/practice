@@ -1,9 +1,11 @@
 package ru.ssau.tk.name.practice;
 
 import org.testng.annotations.*;
+import ru.ssau.tk.name.practice.dataType.Point;
+import ru.ssau.tk.name.practice.dataType.Points;
 
 import static org.testng.Assert.*;
-import static ru.ssau.tk.name.practice.Points.*;
+import static ru.ssau.tk.name.practice.dataType.Points.*;
 
 
 public class PointsTest {

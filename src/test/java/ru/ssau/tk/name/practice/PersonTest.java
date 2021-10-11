@@ -1,6 +1,8 @@
 package ru.ssau.tk.name.practice;
 
 import org.testng.annotations.*;
+import ru.ssau.tk.name.practice.dataType.Gender;
+import ru.ssau.tk.name.practice.dataType.Person;
 
 import static org.testng.Assert.*;
 

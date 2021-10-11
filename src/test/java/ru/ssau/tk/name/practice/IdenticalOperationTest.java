@@ -1,9 +1,10 @@
 package ru.ssau.tk.name.practice;
 
 import org.testng.annotations.*;
+import ru.ssau.tk.name.practice.dataType.IdenticalOperation;
 
 import static org.testng.Assert.*;
-import static ru.ssau.tk.name.practice.Operation.*;
+import static ru.ssau.tk.name.practice.dataType.Operation.*;
 
 public class IdenticalOperationTest {
 

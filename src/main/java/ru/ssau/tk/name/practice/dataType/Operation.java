@@ -1,4 +1,4 @@
-package ru.ssau.tk.name.practice;
+package ru.ssau.tk.name.practice.dataType;
 
 public abstract class Operation {
     public static final double DELTA = 0.001;

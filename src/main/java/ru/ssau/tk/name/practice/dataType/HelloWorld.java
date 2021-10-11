@@ -1,4 +1,4 @@
-package ru.ssau.tk.name.practice;
+package ru.ssau.tk.name.practice.dataType;
 
 public class HelloWorld {
     public static void main(String[] args) {

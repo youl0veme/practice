@@ -1,4 +1,4 @@
-package ru.ssau.tk.name.practice;
+package ru.ssau.tk.name.practice.dataType;
 
 public class Points {
     public final static double DELTA = 0.00005;

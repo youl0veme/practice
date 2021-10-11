@@ -1,6 +1,9 @@
 package ru.ssau.tk.name.practice;
 
 import org.testng.annotations.*;
+import ru.ssau.tk.name.practice.dataType.Person;
+import ru.ssau.tk.name.practice.dataType.Point;
+import ru.ssau.tk.name.practice.dataType.PrintType;
 
 public class PrintTypeTest {
     @Test

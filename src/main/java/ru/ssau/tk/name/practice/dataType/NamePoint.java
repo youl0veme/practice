@@ -1,6 +1,6 @@
-package ru.ssau.tk.name.practice;
+package ru.ssau.tk.name.practice.dataType;
 
-public class NamePoint extends Point implements Resettable{
+public class NamePoint extends Point implements Resettable {
     private String name;
 
     public NamePoint() {

@@ -1,4 +1,6 @@
-package ru.ssau.tk.name.practice;
+package ru.ssau.tk.name.practice.dataType;
+
+import ru.ssau.tk.name.practice.dataType.Gender;
 
 public class Person {
     private String firstName;
