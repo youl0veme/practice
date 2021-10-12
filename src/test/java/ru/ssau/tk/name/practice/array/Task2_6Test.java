@@ -1,0 +1,19 @@
+package ru.ssau.tk.name.practice.array;
+
+import org.testng.annotations.*;
+
+import static org.testng.Assert.*;
+
+public class Task2_6Test {
+    @Test
+    public void testGenerateSqrArray() {
+        int[] array = Task2_6.generateSqrArray(5);
+        assertEquals(array.length, 5);
+        assertEquals(array[0], 0);
+        assertEquals(array[1], 1);
+        assertEquals(array[2], 4);
+        assertEquals(array[3], 9);
+        assertEquals(array[4], 16);
+    }
+
+}
