@@ -43,7 +43,7 @@ public class Points {
     }
 
     public static Point vectorProduct(Point first, Point second) {
-        return new Point(first.getX() - second.getX(), first.getY() - second.getY(), first.getZ() - second.getZ());
+        return new Point(first.getY() * second.getZ() - first.getZ() * second.getY(), first.getZ() * second.getX() - first.getX() * second.getZ(), first.getX() * second.getY() - first.getY() * second.getX());
     }
 
     private static boolean equalsApproximately(double first, double second) {

@@ -57,8 +57,8 @@ public class PointsTest {
 
     @Test
     public void testVectorProduct() {
-        assertTrue(Points.equalsApproximately(Points.vectorProduct(new Point(3.0, 2.0, 1.0), new Point(-1.0, 4.0, 5.0)), new Point(4.0, -2.0, -4.0)));
-        assertTrue(Points.equalsApproximately(Points.vectorProduct(new Point(0.0, 7.0, 1.5), new Point(2.0, 3.5, 1.0)), new Point(-2.0, 3.5, 0.5)));
+        assertTrue(Points.equalsApproximately(Points.vectorProduct(new Point(3.0, 2.0, 1.0), new Point(-1.0, 4.0, 5.0)), new Point(6.0, -16.0, 14.0)));
+        assertTrue(Points.equalsApproximately(Points.vectorProduct(new Point(0.0, 7.0, 1.5), new Point(1.5, 2., -3.)), new Point(-24.0, 2.25, -10.5)));
     }
 
     @Test
