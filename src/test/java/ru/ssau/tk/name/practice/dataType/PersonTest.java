@@ -69,4 +69,10 @@ public class PersonTest {
         one.setGender(Gender.FEMALE);
         two.setGender(Gender.MALE);
     }
+
+    @Test
+    public void testToString() {
+        Person four = new Person("Blabla", "Blabla");
+        assertEquals(four.toString(), "Blabla Blabla");
+    }
 }

@@ -63,4 +63,9 @@ public class Person {
     public void setGender(Gender gender) {
         this.gender = gender;
     }
+
+    @Override
+    public String toString() {
+        return firstName + " " + lastName;
+    }
 }
