@@ -66,4 +66,9 @@ public class PointsTest {
         assertEquals(Points.scalarProduct(new Point(1., -1., 0.5), new Point(2., 4., 6.)), 1., DELTA);
         assertEquals(Points.scalarProduct(new Point(5., 2., 0.), new Point(0.2, 4., 1.)), 9., DELTA);
     }
+
+    @Test
+    public void testToString() {
+        assertEquals(new Point(1., 3., 5.).toString(), "[1.0, 3.0, 5.0]");
+    }
 }
