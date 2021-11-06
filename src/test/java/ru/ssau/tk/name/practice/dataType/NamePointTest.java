@@ -33,4 +33,12 @@ public class NamePointTest {
         first.reset();
         assertEquals(first.getName(), "Absent");
     }
+
+    @Test
+    public void testToString() {
+        NamePoint first = new NamePoint(4, 6, 8);
+        NamePoint second = new NamePoint(1, 2, 3, "Point");
+        assertEquals(first.toString(), "[4.0, 6.0, 8.0]");
+        assertEquals(second.toString(), "Point [1.0, 2.0, 3.0]");
+    }
 }

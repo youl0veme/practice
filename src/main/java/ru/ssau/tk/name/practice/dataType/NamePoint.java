@@ -25,7 +25,15 @@ public class NamePoint extends Point implements Resettable {
         this.name = name;
     }
 
-    public void reset(){
-        this.name="Absent";
+    public void reset() {
+        this.name = "Absent";
+    }
+
+    @Override
+    public String toString() {
+        if (name == null) {
+            return super.toString();
+        }
+        return name + " " + super.toString();
     }
 }
