@@ -69,4 +69,14 @@ public class MatricesTest {
         assertEquals(multiplyByNumberMatrix.getAt(1, 0), 15, DELTA);
         assertEquals(multiplyByNumberMatrix.getAt(1, 1), 20, DELTA);
     }
+
+    @Test
+    public void testToString() {
+        Matrix first = new Matrix(2, 2);
+        first.setAt(0, 0, 1);
+        first.setAt(0, 1, 2);
+        first.setAt(1, 0, 3);
+        first.setAt(1, 1, 4);
+        assertEquals(first.toString(), "1.0, 2.0;\n3.0, 4.0;\n");
+    }
 }
