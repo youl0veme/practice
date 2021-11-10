@@ -1,9 +1,11 @@
 package ru.ssau.tk.name.practice.array;
 
+import ru.ssau.tk.name.practice.exception.IncompatibleDimensionsException;
+
 public class Matrices {
     public static Matrix sumMatrix(Matrix first, Matrix second) {
         if (first.getNSize() != second.getNSize() | first.getMSize() != second.getMSize()) {
-            return null;
+            throw new IncompatibleDimensionsException();
         }
         Matrix sumMatrix = new Matrix(first.getNSize(), second.getMSize());
         for (int i = 0; i < sumMatrix.getNSize(); i++) {
@@ -17,7 +19,7 @@ public class Matrices {
 
     public static Matrix multiplyMatrix(Matrix first, Matrix second) {
         if (first.getMSize() != second.getNSize()) {
-            return null;
+            throw new IncompatibleDimensionsException("Разные размеры матриц");
         }
         Matrix multMatrix = new Matrix(first.getNSize(), second.getMSize());
         for (int i = 0; i < multMatrix.getNSize(); ++i) {

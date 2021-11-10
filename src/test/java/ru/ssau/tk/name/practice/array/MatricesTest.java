@@ -1,6 +1,7 @@
 package ru.ssau.tk.name.practice.array;
 
 import org.testng.annotations.Test;
+import ru.ssau.tk.name.practice.exception.IncompatibleDimensionsException;
 
 import static org.testng.Assert.*;
 
@@ -24,11 +25,11 @@ public class MatricesTest {
 
         Matrix sumMatrix = Matrices.sumMatrix(first, second);
 
-        assert sumMatrix != null;
         assertEquals(sumMatrix.getAt(0, 0), 5, DELTA);
         assertEquals(sumMatrix.getAt(0, 1), 5, DELTA);
         assertEquals(sumMatrix.getAt(1, 0), 5, DELTA);
         assertEquals(sumMatrix.getAt(1, 1), 5, DELTA);
+        assertThrows(IncompatibleDimensionsException.class, () -> Matrices.sumMatrix(first, new Matrix(1, 2)));
     }
 
     @Test
@@ -47,11 +48,11 @@ public class MatricesTest {
 
         Matrix multiplyMatrix = Matrices.multiplyMatrix(first, second);
 
-        assert multiplyMatrix != null;
         assertEquals(multiplyMatrix.getAt(0, 0), 8, DELTA);
         assertEquals(multiplyMatrix.getAt(0, 1), 5, DELTA);
         assertEquals(multiplyMatrix.getAt(1, 0), 20, DELTA);
         assertEquals(multiplyMatrix.getAt(1, 1), 13, DELTA);
+        assertThrows(IncompatibleDimensionsException.class, () -> Matrices.multiplyMatrix(first, new Matrix(1, 1)));
     }
 
     @Test
