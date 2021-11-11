@@ -1,6 +1,6 @@
 package ru.ssau.tk.name.practice.collection;
 
-public abstract class Location {
+public class Location {
     private int id;
     private String name;
     private double latitude;
